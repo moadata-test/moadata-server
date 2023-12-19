@@ -30,4 +30,18 @@ public class Member extends BaseEntity {
 
     @Column(name = "MEMBER_MOBILE_NO", nullable = false)
     private String phoneNumber;
+
+    public void updatePassword(String password) {
+        this.password = password;
+    }
+
+    public void updateEmail(String email) {
+        this.email = email;
+    }
+
+    public void updateMember(String name, Integer type, String phonNumber) {
+        this.name = name;
+        this.type = type;
+        this.phoneNumber = phonNumber;
+    }
 }
